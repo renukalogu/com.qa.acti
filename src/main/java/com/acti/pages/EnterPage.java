@@ -1,5 +1,7 @@
 package com.acti.pages;
 
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.acti.base.DriverScript;
@@ -15,6 +17,14 @@ import com.acti.base.DriverScript;
 public class EnterPage  extends DriverScript{
 	
 	// **************************************** Page Locators **************************************//
+	
+	@FindBy(id="logoutLink") WebElement logoutLink;
+	@FindBy(xpath = "//a[class='userProfileLink username']") WebElement userloggedText;
+	@FindBy(xpath = "//div[@id='container_tasks']") WebElement menuTask;
+	@FindBy(xpath = "//div[@id='container_reports']") WebElement menuReports;
+	@FindBy(xpath = "//a[@class='content users']") WebElement menuUsers ; 
+	
+	
 	// **************************************** Page Initialization *******************************//
 	
 	public EnterPage() {
