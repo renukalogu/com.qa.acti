@@ -32,6 +32,21 @@ public class EnterPage  extends DriverScript{
 	}
 
 	// **************************************** Page Methods **************************************//
+	
+	public void clickLogout()
+	{
+		logoutLink.click();
+	}
+	
+	public String getuserLoggedIN()
+	{
+		return userloggedText.getText();
+	}
+	
+	public void clickTaskMenu()
+	{
+		menuTask.click();
+	}
 
 
 }
