@@ -19,7 +19,7 @@ public class EnterPage  extends DriverScript{
 	// **************************************** Page Locators **************************************//
 	
 	@FindBy(id="logoutLink") WebElement logoutLink;
-	@FindBy(xpath = "//a[class='userProfileLink username']") WebElement userloggedText;
+	@FindBy(xpath = "//a[@class='userProfileLink username ']") WebElement userloggedText;
 	@FindBy(xpath = "//div[@id='container_tasks']") WebElement menuTask;
 	@FindBy(xpath = "//div[@id='container_reports']") WebElement menuReports;
 	@FindBy(xpath = "//a[@class='content users']") WebElement menuUsers ; 
@@ -38,7 +38,7 @@ public class EnterPage  extends DriverScript{
 		logoutLink.click();
 	}
 	
-	public String getuserLoggedIN()
+	public String getuserLoggedIn()
 	{
 		return userloggedText.getText();
 	}
